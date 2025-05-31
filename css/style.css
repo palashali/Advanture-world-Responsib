@@ -58,6 +58,7 @@ header {
     color: white;
     font-family:sans-serif;
     min-height: 100vh;
+    min-width: 100vh;
 }
 
 .navbar {
@@ -340,67 +341,104 @@ footer h4{
 /* Mobile view */
 
 @media only screen and (max-width:600px) {
-h1 {
-    font-size: 45px;
+
+    h1 {
+    font-size: 20px;
 }
 
 h2 {
-      font-size: 35px;
+      font-size: 20px;
 }
 
+body{
+    margin: 0px;
+    padding: 0px;
+}
 
-/* section {
-    margin-top: 50px;
-    margin-bottom: 25px;
-    margin-left: 50px;
-
- 
-} */
 
 header {
-   
-    width: 95vh;
+
+    min-height: 65vh;
+    min-width: 50vh;
+
+}
+.logo h4{
+    margin: 0px auto;
+text-align: center;
+    padding: 20px 0px;
+
 }
 
+.navbar {
+    margin: 10px;
 
-.navbar ul {
+    display: block;
 
    font-size: 20px;}
 
 .navbar ul li {
-margin-left: 25px;
+margin: 0 auto;
+display: flex;
+padding: 10px;
+}
+
+.navbar ul{
+    margin: 0px 10px 0px 10px;
+    padding: 0px;
+}
+
+.navbar ul li a{
+    font-size: 16px;
+    text-align: center;
+    margin: 0px auto;
 }
 
 
+.banner{
+    padding: 10px;
+}
+
+
+
 /* upcaming evat */
+
 .set2{
-   margin-top: 50px;
-    margin-bottom: 25px;
-    margin-left: 50px;
-    margin-right: -110px;
+    margin: 25px 0px 0px 0px;
 }
 
 .banner2{
 
     margin-bottom: 80px;
 }
+
+
 .banner2 h2{
-    font-size: 35px;
-  margin: 0px 0px 25px 0px;
+    font-size: 30px;
+  margin: 0px 0px 20px 0px;
+}
+
+.banner h4{
+    font-size: 20px;
 }
 .banner2 span{
 margin-top: -10px;
 }
+
+
 .evant-main{
     display: block;
  margin: -20px 0px 0px 0px;
+ min-width: 90%;
 }
+
+
 .evant{
     padding: 10px;
 }
 
 .evant img{
-    width: 100%;
+    width: 75%;
+    height: 85%;
     margin: 0 auto;
 
 }
@@ -424,28 +462,100 @@ margin-top: -10px;
     object-fit: cover;
    
     min-height: 40vh;
-    width: 100vh;
+    width: 55vh;
     margin: 0px 0px 0px 0px;
 }
 .explore-pareant{
-    display: flex;
-    padding: 80px 0px 80px 80px;
+    display: block;
+    padding: 40px 30px 40px 30px;
     column-gap: 10px;
 }
 .explore{
     width: 40%;
 }
 .explore h1{
+    font-size: 30px;
    padding: 0px 0px 0px 0px;
-    margin: 0 50px 10px 0 ;
+    margin: 0px 0px 0px 0px ;
+    width: 300px;
 }
 
 }
 .explore p{
-    font-size: 20px;
+    font-size: 16px;
     padding: 15px 0px 10px 0px;
-    margin: 25px 0px 0px 0px;;
+    margin: 20px 0px 20px 0px;
+    text-align: start;
+    width: 350px;
+ 
 }
+
+
+/* tours start */
+.upcaming-tours{
+    margin: 100px;
+    /* display: block; */
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 15px;
+
+}
+
+.set3{
+    margin: 0px 30px 40px 30px;
+    padding: 0px 0px 0px 0px;
+}
+.tours{
+    /* row-gap: 15px; */
+    display: inline;
+}
+.tours h4{
+    font-size: 35px;
+    line-height: 50px;
+    margin: 40px 30px 40px 30px;
+}
+
+
+
+.tours span{
+height: 5px;
+width: 300px;
+background-color: red;
+display: block;
+margin: 10px 0px 0px 0px;
+
+}
+
+.tours p{  font-size: 18px;
+    padding: 0px 0px 0px 0px;
+    margin: 25px 40px 35px 0px;
+    line-height: 27px;
+    text-align: justify;
+    text-transform: capitalize;
+}
+.tours a{
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(190, 19, 19);
+    letter-spacing: 2px;
+    margin: 100px 0px 0px 0px;
+
+}
+.tours img{
+    padding: 20px ;
+}
+.img1{
+    height: 55%;
+    object-fit: cover;
+    width: 95%;
+    border-radius: 5px;
+}
+.img2{
+    width: 95%;
+    border-radius: 5px;
+}
+  
+/* tours end */
 
 
 .explore a{
@@ -456,82 +566,22 @@ margin-top: -10px;
 }
 
 
-/* thor */
-/* .set3{
-   margin-top: 50px;
-    margin-bottom: 25px;
-    margin-left: 50px;
-    margin-right: -110px;
-} */
-
-/* .upcaming-tours{
-    margin: 100px 0px 0px 0px;
-    display: block;
-   
-    grid-gap: 15px;
-}
-.tours{
-    /* row-gap: 15px; */
-    display: inline;
-}
-.tours h4{
-    font-size: 35px;
-    line-height: 50px;
-    margin: 0 0 0 0;
-}
-
-.tours p{  font-size: 20px;
-    padding: 15px 0px 0px 0px;
-    margin: 25px 0px 0px 0px;
- 
-}
-.tours a{
-    font-size: 20px;
-    margin: 200px 0px 0px 0px;
-
-} */
-/* .tours img{
-    padding: 20px ;
-    margin: 0px 0px 0px 0px;
-   
-}
-.img1{
-    height: 55%;
-
-    width: 100%;
-    border-radius: 5px;
-}
-.img2{
-    width: 110%;
-    border-radius: 5px;
-} */
-
-/* footer start */
-
-footer{
-
-    width: 100vh;
-}
 
 
 
 
-footer h4{
-    font-size: 25px
 
-
-}
 
 
     
 
 /* Tablet view */
-/* 
+
 @media only screen and (min-width:601px) and (max-width:991px) {
 
 
 
-} */
+}
 
 /* laptop view */
 
